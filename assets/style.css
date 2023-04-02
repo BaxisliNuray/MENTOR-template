@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+.nav-left-part h1 a {
+    text-decoration: none;
+    color: #5fcf80;
+
+}
+
+nav .nav-right-part {
+    padding-left: 3em;
+}
+
+nav .nav-right-part ul {
+    display: flex;
+    align-items: center;
+
+
+}
+
+nav .nav-right-part ul li {
+    list-style: none;
+    padding-right: 2.1em;
+    position: relative;
+    align-items: center;
+
+}
+
+nav .nav-right-part ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #37423B;
+    transition: 0.5s;
+
+}
+
+nav .nav-right-part ul li a:hover {
+    color: #5fcf80;
+
+
+}
+
+nav .nav-right-part .home {
+    color: #5fcf80;
+}
+
+
+/* #dropdown ul li{
+    display: block;
+}
+
+#dropdown{
+    position: absolute;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav button {
+    border: 1px solid #5fcf80;
+    background-color: #5fcf80;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 8px 25px;
+    white-space: pre;
+    transition: 0.5s;
+}
+
+nav button:hover {
+    background-color: #48b96a;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url('https://bootstrapmade.com/demo/templates/Mentor/assets/img/hero-bg.jpg');
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+
+}
+
+
+.hero-items {
+    padding-top: 160px;
+    padding-left: 100px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+
+
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.hero button {
+
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-top: 30px;
+    border-radius: 50px;
+    padding: 15px 38px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.hero button:hover {
+    background-color: #5fcf80;
+    border-color: #5fcf80;
+}
+
+.row .content h3 {
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    color: #444444;
+}
+
+.row .content span {
+    font-size: 15px;
+    color: #525252;
+    position: relative;
+    top: 10px;
+}
+
+.row .content p {
+    margin-top: 25px;
+    font-size: 17px;
+
+}
+
+.row .content .fa-circle-check {
+    color: #5fcf80;
+    font-size: 19px;
+    padding-right: 6px;
+}
+
+.row .content-img {
+    background-image: url(https://bootstrapmade.com/demo/templates/Mentor/assets/img/about.jpg);
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+#count {
+    background-color: #f6f7f6;
+    height: 100px;
+
+}
+
+#count .container {
+    width: 75%;
+}
+
+#count .container .row {
+    width: 100%;
+    align-items: center;
+
+}
+
+#count .container .row .col-3 {
+    align-items: center;
+}
+
+
+#count .num {
+    font-size: 48px;
+    justify-content: space-between;
+    color: #5fcf80;
+    font-weight: 600;
+}
+
+#count .name {
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #37423b;
+    /* sozler niyese ortalanmir */
+}
+
+
+
+#choose .container .main-card {
+    color: white;
+    border: 1px solid #5fcf80;
+    border-radius: 3px;
+    background-color: #5fcf80;
+    padding: 30px;
+    width: 80%;
+}
+
+#choose .container .main-card h1 {
+    margin-bottom: 35px;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+#choose .container .main-card p {
+    font-size: 15px;
+}
+
+#choose .container .main-card button {
+    color: white;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: relative;
+    font-size: 15px;
+    left: 50px;
+    bottom: -15px;
+    transition: 0.5s;
+}
+
+#choose .container .main-card button:hover {
+    color: #5fcf80;
+    background-color: white;
+    border: #f6f7f6;
+
+
+}
+
+.col-8 {
+    width: 62%;
+    display: flex;
+    margin-left: -60px;
+    align-items: center;
+
+}
+
+#choose .container .card {
+    border: 1px solid #eef0ef;
+    padding: 35px;
+    display: inline-block;
+    margin: 0px 9px;
+
+    
+    
+
+
+}
+
+.icon {
+    border: 1px solid#ecf9f0;;
+    background: #ecf9f0;
+    border-radius: 60%;
+    color: #5fcf80;
+    padding:20px;
+    font-size: 30px;
+    margin-bottom: 30px;
+   position: relative;
+   left: 20%;
+
+}
+.col-8 .col-4 p{
+    font-size: 15px;
+    color: #848484;
+
+}
+.col-8 .col-4 h2{
+    font-size: 20px;
+    font-weight: 600;
+margin-bottom: 30px;
+/* sozleri tam ortaya getire bilmirem */
+
+}
+
+
+#icon-row .container .row {
+    width: 100%;
+    align-items: center;
+
+}
+
+#icon-row .container .row .col-3 {
+    align-items: center;
+    display: flex;
+    border: 1px solid  #eef0ef;
+    padding: 20px;
+}
+#icon-row .container .row .col-3 a{
+    display: flex;
+    text-decoration: none;
+    color: #37423b;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#icon-row .container .row .col-3 {
+    display: flex;
+border: 1px solid #eef0ef;
+width: 90%;
+
+}
