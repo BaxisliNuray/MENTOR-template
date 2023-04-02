@@ -83,6 +83,9 @@ nav .nav-right-part .home {
     color: #5fcf80;
 }
 
+nav .nav-right-part .dropdown .fa-chevron-down {
+    font-size: small;
+}
 
 /* #dropdown ul li{
     display: block;
@@ -91,21 +94,6 @@ nav .nav-right-part .home {
 #dropdown{
     position: absolute;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -223,7 +211,7 @@ nav button:hover {
 }
 
 #count .container .row .col-3 {
-    align-items: center;
+    text-align: center;
 }
 
 
@@ -249,18 +237,21 @@ nav button:hover {
     border: 1px solid #5fcf80;
     border-radius: 3px;
     background-color: #5fcf80;
-    padding: 30px;
-    width: 80%;
+    padding: 20px 30px;
+
+    width: 95%;
 }
 
 #choose .container .main-card h1 {
     margin-bottom: 35px;
     font-size: 34px;
     font-weight: 500;
+
 }
 
-#choose .container .main-card p {
-    font-size: 15px;
+#choose .container .col-4 .main-card p {
+    font-size: 20px;
+
 }
 
 #choose .container .main-card button {
@@ -270,10 +261,17 @@ nav button:hover {
     border-radius: 50px;
     padding: 10px 30px;
     position: relative;
-    font-size: 15px;
-    left: 50px;
-    bottom: -15px;
+    font-size: 17px;
+    cursor: pointer;
+    top: 5px;
+    left: 55px;
     transition: 0.5s;
+    white-space: nowrap;
+}
+
+#choose .container .main-card button .fa-chevron-right {
+    font-size: 15px;
+    padding-left: 10px;
 }
 
 #choose .container .main-card button:hover {
@@ -284,11 +282,15 @@ nav button:hover {
 
 }
 
+
+
+
 .col-8 {
     width: 62%;
     display: flex;
-    margin-left: -60px;
     align-items: center;
+
+
 
 }
 
@@ -297,62 +299,224 @@ nav button:hover {
     padding: 35px;
     display: inline-block;
     margin: 0px 9px;
+    text-align: center;
 
-    
-    
+
+
 
 
 }
 
-.icon {
-    border: 1px solid#ecf9f0;;
+#card-icons {
+    border: 1px solid#ecf9f0;
     background: #ecf9f0;
     border-radius: 60%;
     color: #5fcf80;
-    padding:20px;
+    padding: 20px;
+    text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
-   position: relative;
-   left: 20%;
+    position: relative;
+    left: 20%;
 
 }
-.col-8 .col-4 p{
+
+.col-8 .col-4 p {
     font-size: 15px;
     color: #848484;
 
 }
-.col-8 .col-4 h2{
+
+.col-8 .col-4 h2 {
     font-size: 20px;
     font-weight: 600;
-margin-bottom: 30px;
-/* sozleri tam ortaya getire bilmirem */
+    margin-bottom: 30px;
+    text-align: center;
 
 }
 
+#icon-row .container {
+    width: 80%;
 
-#icon-row .container .row {
-    width: 100%;
-    align-items: center;
 
 }
 
 #icon-row .container .row .col-3 {
+    border: 1px solid #eef0ef;
+    margin: 1.3em 0.8em;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    border: 1px solid  #eef0ef;
-    padding: 20px;
+    width: 21%;
+    transition: 0.5s;
+
 }
-#icon-row .container .row .col-3 a{
+
+#icon-row .container .row .col-3 .box-icon {
+    padding: 20px;
     display: flex;
+    align-items: center;
+
+
+
+
+
+}
+
+#icon-row .container .row .col-3 .box-icon a {
     text-decoration: none;
+    font-size: 15px;
+    transition: 0.5s;
     color: #37423b;
     font-weight: 700;
-    font-size: 16px;
 }
 
-#icon-row .container .row .col-3 {
-    display: flex;
-border: 1px solid #eef0ef;
-width: 90%;
+#icon-row .container .row .col-3 .box-icon .fa-circle-dot,
+.fa-solid,
+.fa-calendar {
+    font-size: 32px;
+    padding-right: 5px;
+}
 
+#icon-row .container .row .col-3:hover {
+    border: 1px solid #5fcf80;
+    color: #5fcf80;
+}
+
+#trainers {
+    margin: 7em;
+}
+#trainers .container {
+    width: 80%;
+    
+}
+
+#trainers.container .row {
+    display: flex;
+}
+
+#trainers .container .row .col-4 {
+    width: 30%;
+    display: flex;
+    padding: 0 9px;
+
+    
+}
+
+#trainers .container .row .col-4 .trainer img {
+    width: 100%;
+    height:auto;
+
+    
+}
+
+#trainers .container .row .col-4 .trainer {
+    border: 1px solid rgb(218, 211, 211);
+}
+
+#trainers .container .row .col-4 .trainer .box,h2,p{
+    margin-left: 10px;
+}
+
+#trainers .container .row .col-4 .trainer .trainer-content .box{
+    display: flex;
+    justify-content: space-between;
+}
+
+#trainers .container .row .col-4 .trainer .trainer-content .box h3{
+    background-color: #5fcf80;
+    font-size: small;
+    color: white;
+    padding: 5px 10px;
+    
+    
+}
+#trainers .container .row .col-4 .trainer .trainer-content .box span{
+    margin-right: 6px;
+    font-weight: 700;
+}
+#trainers .container .row .col-4 .trainer h2{
+    font-size: 15px;
+    padding: 10px 0;
+}
+#trainers .container .row .col-4 .trainer p{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+
+.trainer-follow{
+    display: flex;
+    align-items: center;
+}
+.trainer-follow .trainer-img{
+    width: 55px;
+    height: 55px;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+}
+.trainer-follow .trainer-rank{
+    color: #aaaaaa;
+    font-size: small;
+    margin-left: 35px;
+}
+
+
+
+
+#members .container {
+    width: 80%;
+    
+}
+
+#members .container .row {
+    display: flex;
+}
+
+#members .container .row .col-4 {
+    width: 30%;
+    display: flex;
+    padding: 0 9px;
+
+    
+}
+
+#members .container .row .col-4 img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+#members .container .row .col-4 .member {
+    text-align: center;
+   
+    border: 1px solid rgb(218, 211, 211);
+}
+#members .container .row .col-4 .member .member-content{
+    margin: 10px ;
+}
+#members .container .row .col-4 .member .member-content h3 {
+    font-size: 15px;
+   
+}
+
+#members .container .row .col-4 .member .member-content span {
+    font-size: 13px;
+   
+}
+
+#members .container .row .col-4 .member .member-content p {
+    padding-top: 10px;
+    font-size: 15px;
+
+}
+#social-media a{
+    color: #aaaaaa;
+    font-size:25px;
+    padding: 30px 0;
+}
+#social-media a:hover{
+    color: #5fcf80;
 }
