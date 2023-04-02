@@ -87,13 +87,46 @@ nav .nav-right-part .dropdown .fa-chevron-down {
     font-size: small;
 }
 
-/* #dropdown ul li{
-    display: block;
+.dropdown {
+    margin-top: 10px;
+    position: relative;
+    transition: 0.5s;
 }
 
-#dropdown{
+.dropdown-elements {
+    height: 230px;
+    width: 300px;
+    background-color: white;
+    font-size: 17px;
+    padding-top: 10px;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.5);
     position: absolute;
-} */
+    top: 50%;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.deep-dropdown {
+    position: relative;
+
+}
+.deep-dropdown-elemens:hover {
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+}
+.dropdown-elements:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+.dropdown:hover+.dropdown-elements {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 
 
@@ -114,7 +147,7 @@ nav button:hover {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
         url('https://bootstrapmade.com/demo/templates/Mentor/assets/img/hero-bg.jpg');
     width: 100%;
     height: 80vh;
@@ -139,6 +172,7 @@ nav button:hover {
 
 .hero p {
     font-size: 24px;
+    color: white;
 }
 
 .hero button {
@@ -148,7 +182,7 @@ nav button:hover {
     background-color: transparent;
     margin-top: 30px;
     border-radius: 50px;
-    padding: 15px 38px;
+    padding: 12px 38px;
     font-size: 15px;
     font-weight: 600;
     transition: 0.5s;
@@ -227,7 +261,7 @@ nav button:hover {
     font-size: 15px;
     font-weight: 500;
     color: #37423b;
-    /* sozler niyese ortalanmir */
+   
 }
 
 
@@ -251,6 +285,8 @@ nav button:hover {
 
 #choose .container .col-4 .main-card p {
     font-size: 20px;
+    color: white;
+    margin: 10px 0;
 
 }
 
@@ -289,6 +325,7 @@ nav button:hover {
     width: 62%;
     display: flex;
     align-items: center;
+    
 
 
 
@@ -313,11 +350,11 @@ nav button:hover {
     border-radius: 60%;
     color: #5fcf80;
     padding: 20px;
-    text-align: center;
     font-size: 30px;
     margin-bottom: 30px;
-    position: relative;
-    left: 20%;
+    white-space: nowrap;
+
+  
 
 }
 
@@ -385,9 +422,10 @@ nav button:hover {
 #trainers {
     margin: 7em;
 }
+
 #trainers .container {
     width: 80%;
-    
+
 }
 
 #trainers.container .row {
@@ -399,56 +437,70 @@ nav button:hover {
     display: flex;
     padding: 0 9px;
 
-    
+
 }
 
 #trainers .container .row .col-4 .trainer img {
     width: 100%;
-    height:auto;
+    height: auto;
 
-    
+
 }
 
 #trainers .container .row .col-4 .trainer {
     border: 1px solid rgb(218, 211, 211);
 }
 
-#trainers .container .row .col-4 .trainer .box,h2,p{
+#trainers .container .row .col-4 .trainer .box,h2,p {
     margin-left: 10px;
 }
 
-#trainers .container .row .col-4 .trainer .trainer-content .box{
-    display: flex;
-    justify-content: space-between;
+#trainers .container .row .col-4 .trainer .trainer-content h2 {
+    transition: 0.5s;
 }
 
-#trainers .container .row .col-4 .trainer .trainer-content .box h3{
+#trainers .container .row .col-4 .trainer .trainer-content .box {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+#trainers .container .row .col-4 .trainer .trainer-content h2:hover {
+    color: #5fcf80;
+    cursor: pointer;
+}
+
+#trainers .container .row .col-4 .trainer .trainer-content .box h3 {
     background-color: #5fcf80;
     font-size: small;
     color: white;
     padding: 5px 10px;
-    
-    
+
+
 }
-#trainers .container .row .col-4 .trainer .trainer-content .box span{
+
+#trainers .container .row .col-4 .trainer .trainer-content .box span {
     margin-right: 6px;
     font-weight: 700;
 }
-#trainers .container .row .col-4 .trainer h2{
+
+#trainers .container .row .col-4 .trainer h2 {
     font-size: 15px;
     padding: 10px 0;
 }
-#trainers .container .row .col-4 .trainer p{
+
+#trainers .container .row .col-4 .trainer p {
     font-size: 14px;
     padding-bottom: 15px;
 }
 
 
-.trainer-follow{
+.trainer-follow {
     display: flex;
     align-items: center;
 }
-.trainer-follow .trainer-img{
+
+.trainer-follow .trainer-img {
     width: 55px;
     height: 55px;
     margin: 10px;
@@ -457,7 +509,8 @@ nav button:hover {
     background-size: cover;
     display: flex;
 }
-.trainer-follow .trainer-rank{
+
+.trainer-follow .trainer-rank {
     color: #aaaaaa;
     font-size: small;
     margin-left: 35px;
@@ -468,11 +521,12 @@ nav button:hover {
 
 #members .container {
     width: 80%;
-    
+
 }
 
 #members .container .row {
     display: flex;
+    
 }
 
 #members .container .row .col-4 {
@@ -480,10 +534,10 @@ nav button:hover {
     display: flex;
     padding: 0 9px;
 
-    
+
 }
 
-#members .container .row .col-4 img {
+#members .container .row .col-4 .member img {
     width: 100%;
     height: auto;
     background-size: cover;
@@ -491,32 +545,168 @@ nav button:hover {
 
 #members .container .row .col-4 .member {
     text-align: center;
-   
     border: 1px solid rgb(218, 211, 211);
 }
-#members .container .row .col-4 .member .member-content{
-    margin: 10px ;
+
+#members .container .row .col-4 .member .member-content {
+    padding: 20px 30px;
 }
+
 #members .container .row .col-4 .member .member-content h3 {
-    font-size: 15px;
-   
+    font-size: 19px;
+    color: #444444;
+font-weight: 500;
 }
 
 #members .container .row .col-4 .member .member-content span {
     font-size: 13px;
-   
+    color: #444444;
+
 }
 
 #members .container .row .col-4 .member .member-content p {
-    padding-top: 10px;
-    font-size: 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+    padding: 14px 0 7px;
 
 }
-#social-media a{
-    color: #aaaaaa;
-    font-size:25px;
-    padding: 30px 0;
+
+#social-media a {
+    color:#7e9486;
+    font-size: 23px;
+    margin: 10px 0;
+
 }
-#social-media a:hover{
+
+#social-media a:hover {
     color: #5fcf80;
 }
+
+#footer-top {
+    background-color: #f9faf9;
+    height: auto;
+}
+#footer-top .container
+#footer-top .container {
+    width: 80%;
+}
+
+#footer-top .container .row {
+    display: flex;
+    margin: 50px 0;
+
+}
+
+#footer-top .container .row .col-3 {
+    width: 25%;
+    padding: 0 9px;
+    white-space: nowrap;
+}
+
+#footer-top .container .row .col-3 h3 {
+    font-size: 1.75em;
+    margin: 0.5em 0;
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
+#footer-top .container .row .col-3 p {
+    color: #777777;
+    font-size: 14px;
+    line-height: 26px;
+}
+#footer-top .container .row .col-2{
+    width: 17%;
+    margin:0 20px;
+    white-space: nowrap;
+}
+#footer-top .container .row .col-2 h3{
+    color: #444444;
+    margin: 0.5em 0.2em;
+    font-size: 17px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+#footer-top .container .row .col-2 ul li{
+    list-style: none;
+    line-height: 39px;
+    font-size: 14px;
+}
+#footer-top .container .row .col-2 ul li a{
+    text-decoration: none;
+  color: #777777;
+    
+}
+
+#footer-top .container .row .col-2 ul li .fa-chevron-right{
+    font-size: 14px;
+    color: #5fcf80;
+}
+#footer-top .container .row .col-2 ul li a:hover{
+    color: #5fcf80;
+}
+#footer-top .container .row .col-4{
+    width: 32%;
+    white-space: wrap;
+
+}
+#footer-top .container .row .col-4 h3{
+    color: #444444;
+    margin: 0.5em 0.2em;
+    font-size: 17px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+#footer-top .container .row .col-4 form{
+    padding: 40px;
+    position: relative;
+
+}
+#footer-top .container .row .col-4 form #Email{
+    border: 1px solid #aaaaaa;
+    border-radius: 30px;
+    padding: 13px 30px;
+}
+#footer-top .container .row .col-4 form button{
+    border: 1px solid #5fcf80;
+    background-color: #5fcf80;
+    color: white;
+    position: absolute;
+    left: 14.5em;
+     top: 2.9em;
+    letter-spacing: 1.4px;
+    padding: 14px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+#footer-bottom.footer-left span ,p{
+    font-size: 15px;
+    color: #37423B;
+}
+#footer-left p a{
+    text-decoration: none;
+    color: #5fcf80;
+}
+
+
+
+#footer-right ul{
+    list-style: none;
+     display: flex;
+     
+    
+}
+#footer-right ul li a{
+  border-radius: 50%;
+  font-size: 15px;
+  margin: 0 6px;
+  padding: 11px;
+  background-color: #5fcf80;
+  color: white;
+  position: relative;
+  left: 39em;
+}
+
+
